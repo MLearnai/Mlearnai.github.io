@@ -53,3 +53,12 @@ body {
     font-weight: bold;
     text-decoration: none;
   }
+
+  .notification-top-bar p a:hover {
+    padding: 5px 10px;
+    border-radius: 3px;
+    background: rgb(0, 0, 0);
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+  }
