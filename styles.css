@@ -12,10 +12,13 @@ body {
     flex-direction: row;
     margin:0px;
     justify-content: center;
-    height: 75vh;
+    margin-top: -11vh;
+    height: 95vh;
+    z-index: 0;
 }
 #top-logo {
-    height: 80px;
+    height: 5rem;
+    z-index: 1;
 }
 #nav-bar-container {
     background-color: black;
@@ -25,7 +28,59 @@ body {
     justify-content: center;
     left: 0;
     right: 0;
+    font-family: sans-serif;
+    z-index: 2;
 }
+#nav-bar-left {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding-left: 16vw;
+}
+#nav-bar-right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding-right: 16vw;
+    justify-content: center;
+}
+#nav-right-text-menu {
+  display: flex;
+  color: white;
+  flex: 3;
+  z-index: 2;
+}
+#console-button {
+  display: flex;
+  /* flex: 1; */
+  position: relative;
+  /* height: 35px; */
+  /* width: 100%; */
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+
+  padding: 0.75rem 0.75rem;
+  border-radius: 5px;
+  background: black;
+  /* background: rgb(255, 255, 255); */
+  /* color: rgb(0, 0,0); */
+  color:white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.2s ease-out;
+}
+#console-button:hover {
+  /* background: rgb(255, 0, 0); */
+  color: red;
+  box-shadow: 0 0 10px 5px red;
+  border: 2px solid red;
+  cursor: pointer;
+  /* background: white; */
+}
+
 #video {
     display: flex;
     justify-content: center;
